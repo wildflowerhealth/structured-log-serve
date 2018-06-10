@@ -1,0 +1,33 @@
+{
+    "name": "structured-log-view",
+    "version": "1.0.0",
+    "description": "View, sort, and filter structured log data from a document data store. Server side package.",
+    "main": "dist/server.js",
+    "scripts": {
+        "build": "tsc -p .",
+        "start": "node ./dist/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wildflowerhealth/structured-log-serve.git"
+    },
+    "keywords": [
+        "log"
+    ],
+    "author": "blake.mitchell@wildflowerhealth.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wildflowerhealth/structured-log-serve/issues"
+    },
+    "homepage": "https://github.com/wildflowerhealth/structured-log-serve#readme",
+    "dependencies": {
+        "mongodb": "^3.0.10",
+        "restify": "^7.2.1",
+        "socket.io": "^2.1.1"
+    },
+    "devDependencies": {
+        "@types/restify": "^7.2.0",
+        "@types/socket.io": "^1.4.34",
+        "typescript": "^2.9.1"
+    }
+}
