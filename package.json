@@ -1,11 +1,12 @@
 {
-    "name": "structured-log-view",
+    "name": "structured-log-serve",
     "version": "1.0.0",
     "description": "View, sort, and filter structured log data from a document data store. Server side package.",
     "main": "dist/server.js",
     "scripts": {
         "build": "tsc -p .",
-        "start": "node ./dist/server.js"
+        "start": "node ./dist/server.js",
+        "dev": "tsc-watch -p . --onSuccess 'npm start'"
     },
     "repository": {
         "type": "git",
@@ -26,8 +27,10 @@
         "socket.io": "^2.1.1"
     },
     "devDependencies": {
+        "@types/mongodb": "^3.0.19",
         "@types/restify": "^7.2.0",
         "@types/socket.io": "^1.4.34",
+        "tsc-watch": "^1.0.22",
         "typescript": "^2.9.1"
     }
 }
